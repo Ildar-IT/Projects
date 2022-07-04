@@ -1,0 +1,119 @@
+@import 'mixins';
+@import '~vuetify/src/styles/styles.sass';
+
+/**
+ * Fonts
+ */
+$font-family: Roboto,sans-serif;
+
+/**
+ * Layout
+ */
+
+//in _variables.scss, config.js and plugins/vuetify.js
+// vuetify breakpoints:
+@import '~vuetify/src/styles/settings/_variables';
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+		'xs': 0,
+		'sm': 600px,
+		'md': 1024px,
+		'lg': 1360px,
+		'xl': 1920px,
+);
+$body-font-family: $font-family;
+$heading-font-family: Montserrat, sans-serif !important;
+$fab-sizes:( 'x-small': 32, 'small': 40, 'default': 50, 'large': 64, 'x-large': 72 );
+
+$btn-sizes: (
+		"default": 44,
+		"large": 50,
+		"small": 32,
+);
+
+$sm: 600px;
+$md: 1024px;
+$lg: 1360px;
+$xl: 1920px;
+$header-height:50px;
+$form-max-weight:296px;
+$layout-width: 1016px;
+
+$layout-margin-xs: 32px;
+$layout-margin-sm: 32px;
+$layout-margin-md: 64px;
+$layout-margin-lg: 64px;
+$layout-margin-xl: 64px;
+
+$layout-gutter-xs: 32px;
+$layout-gutter-sm: 32px;
+$layout-gutter-md: 64px;
+$layout-gutter-lg: 64px;
+$layout-gutter-xl: 64px;
+
+$margin-main-xs: 32px;
+$margin-main-sm: 32px;
+$margin-main-md: 64px;
+$margin-main-lg: 64px;
+$margin-main-xl: 64px;
+
+$margin-small-xs: 16px;
+$margin-small-sm: 16px;
+$margin-small-md: 32px;
+$margin-small-lg: 32px;
+$margin-small-xl: 32px;
+
+/**
+ * Colors
+ */
+
+$black1: #000000;
+$black2: #4D5265;
+//$white-blue: #00B2BB;
+$gray0: #cdd0dc;
+$gray: #b3b8cb;
+$gray-light: #E6E7EE;
+$gray2: #8189A8;
+
+$font-color: $black1;
+$font-color-hover: #000000;
+
+$green1: #87F345;
+$green2: #6CC237;
+$green3:#C2F345;
+$yellow1: #F3EA45;
+$yellow2:#FFE7CC;
+$yellow3:#FFEDB0;
+$yellow4: #FFF9E5;
+
+
+$orange1: #F39345;
+$red1: #F35A45;
+$primary: #00B2BB;
+$primary-hover: #00B2BB;
+$primary-light: #F3F4FC;
+
+$blue-light: #00ADDD;
+
+$secondary: #e6f7f8;
+$secondary-hover: #80d9dd;
+$active: $primary;
+$disabled: #E2E2E2;
+
+$premium: #F7CE22;
+$premium-shadow: 0px 15px 15px rgba(198, 160, 0, 0.24);
+
+$color-brown:#824500;
+$color-good:#CFF7CC;
+$color-bad:#FFCCCC;
+$color-neutral: #FFCF99;
+
+$color-red:#F35A45;
+$color-green:#87F345;
+
+$box-shadow:0px 15px 15px rgba(103, 110, 134, 0.12);
+
+/**
+ * Assets path
+ */
+$assets: '~@/assets';

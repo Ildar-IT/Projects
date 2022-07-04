@@ -1,0 +1,56 @@
+@import 'variables';
+/*
+	здесь мы переопределяем все стили vuetify которые нельзя заменить в теме
+ */
+@import '~vuetify/src/styles/styles.sass';
+
+
+body {
+  .v-application {
+
+  }
+
+  div.v-card__title {
+
+  }
+
+  div.v-dialog {
+    overflow-y: unset;
+    position: relative;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin: 0 20px !important;
+    padding: 80px 0;
+    width: auto !important;
+    min-height: 300px;
+    border-radius: 10px;
+    background: linear-gradient(154.66deg, #EDF4FF -1.2%, #78AEFF 96.94%) !important;
+    @include up($sm) {
+      min-height: 400px;
+      padding: 120px 20px;
+    }
+    @include up($md) {
+      min-height: 500px;
+      padding: 100px 30px;
+    }
+    .v-btn {
+      position: absolute;
+      top: 17px;
+      right: 10px;
+      color: black !important;
+      z-index: 20;
+
+    }
+
+    div.dialog {
+      background: transparent !important;
+      box-shadow: none !important;
+
+      div.v-card__title {
+        word-break: unset;
+      }
+    }
+
+  }
+}

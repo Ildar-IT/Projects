@@ -1,0 +1,231 @@
+{
+  "line 3": {
+    "keyframes": {
+      "y": [
+        {
+          "id": "3e939de2-8df8-4a32-a7b4-bc685b606d84",
+          "ms": 0,
+          "property": "y",
+          "value": 32.5,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "4f4310a6-c81b-467b-bcbb-7480eb95dde0",
+          "ms": 300,
+          "property": "y",
+          "value": 25.1924,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ],
+      "width": [
+        {
+          "id": "489a9ab0-64f1-48a2-8e57-08d22c555a50",
+          "ms": 0,
+          "property": "width",
+          "value": 18,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "78ce8834-622a-4401-828d-3105ba722a15",
+          "ms": 300,
+          "property": "width",
+          "value": 23,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ],
+      "rotation": [
+        {
+          "id": "5edc563c-bd5f-4bef-aaa4-ad5b4e69dc58",
+          "ms": 0,
+          "property": "rotation",
+          "value": 0,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "e0f16eb9-0034-4b44-9c99-167f093c6115",
+          "ms": 300,
+          "property": "rotation",
+          "value": -45,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ]
+    },
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER"
+  },
+  "line 2": {
+    "keyframes": {
+      "opacity": [
+        {
+          "id": "353e7e9c-dbe8-49a9-ac27-9ab916d04554",
+          "ms": 0,
+          "property": "opacity",
+          "value": 1,
+          "easing": "linear",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        },
+        {
+          "id": "d9e08eb7-a04c-40df-97f9-57c79ae64e9c",
+          "ms": 300,
+          "property": "opacity",
+          "value": 0,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ]
+    },
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER"
+  },
+  "line 1": {
+    "keyframes": {
+      "x": [],
+      "rotation": [
+        {
+          "id": "826cf529-1fb5-4b32-b59b-5e09f1ed3d92",
+          "ms": 0,
+          "property": "rotation",
+          "value": 0,
+          "easing": "linear",
+          "easingCurve": [
+            0,
+            0,
+            1,
+            1
+          ]
+        },
+        {
+          "id": "bfda7f2d-ea36-4721-9526-dd6f306a6b0d",
+          "ms": 0,
+          "property": "rotation",
+          "value": 0,
+          "easing": "linear",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        },
+        {
+          "id": "2e5641c4-3bff-493a-ac1a-3d575326cbdf",
+          "ms": 300,
+          "property": "rotation",
+          "value": 45,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ],
+      "y": [
+        {
+          "id": "b39ebe2a-1e92-49c7-bfa2-43ac7db412d8",
+          "ms": 0,
+          "property": "y",
+          "value": 18.5,
+          "easing": "linear",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        },
+        {
+          "id": "1fb6fd8f-c7cd-4605-89e6-4057c4e942dc",
+          "ms": 300,
+          "property": "y",
+          "value": 24.9289,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ],
+      "width": [
+        {
+          "id": "3a31e7fd-6887-406f-a67f-063fe529e18e",
+          "ms": 0,
+          "property": "width",
+          "value": 18,
+          "easing": "linear",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        },
+        {
+          "id": "7328e6b9-59ac-4f70-bcb7-b669c86c3310",
+          "ms": 300,
+          "property": "width",
+          "value": 23,
+          "easing": "easeInOut",
+          "easingCurve": [
+            0.42,
+            0,
+            0.58,
+            1
+          ]
+        }
+      ],
+      "height": []
+    },
+    "version": "0.2.0",
+    "anchorPoint": "MIDDLECENTER"
+  }
+}

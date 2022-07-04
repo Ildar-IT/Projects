@@ -1,0 +1,65 @@
+///@import '~vuetify/src/styles/styles.sass';
+
+// Быстрое плавное появление, быстрое плавное скрытие - хорошо для роутинга страниц
+.route-enter-active, .route-leave-active {
+  transition: opacity .3s
+}
+.route-enter, .route-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active {
+  animation: slide .5s;
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
+.slide-enter-active, .slide-leave-active{
+  transition: opacity 0.5s;
+}
+
+.slide-enter, .slide-leave-to  {
+  opacity: 0;
+}
+
+.routingApp {
+  &-enter-active,
+  &-leave-active {
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
+  }
+  &-enter, &-leave-to {
+    //opacity: 0;
+  }
+
+  &-enter {
+    //transform: translateX(-100vw);
+    opacity: 0;
+  }
+
+  &-leave-to {
+    transform: translateX(-100vw);
+  }
+}
+
+.routingAppChild {
+  &-enter-active,
+  &-leave-active {
+    transition: 0.3s cubic-bezier(0.25, 0.8, 0.25, 1)
+  }
+  &-enter, &-leave-to {
+    //opacity: 0;
+  }
+
+  &-enter {
+    transform: translateX(100vw);
+  }
+
+  &-leave-to {
+    transform: translateX(100vw);
+  }
+}

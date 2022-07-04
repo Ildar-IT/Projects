@@ -1,0 +1,9 @@
+@mixin up( $value, $prop: min-width ) {
+  @media only screen and (#{$prop}: #{$value}) {
+    @content
+  }
+};
+
+@mixin transition() {
+  transition: 0.2s ease-in-out;
+};

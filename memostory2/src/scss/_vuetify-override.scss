@@ -1,0 +1,191 @@
+@import 'variables';
+/*
+	здесь мы переопределяем все стили vuetify которые нельзя заменить в теме
+ */
+@import '~vuetify/src/styles/styles.sass';
+
+
+body {
+  .v-application {
+
+  }
+
+  #memostory {
+    //BUTTONS BTNS
+    .v-btn {
+      border-radius: 1000px;
+      text-transform: inherit;
+    }
+    will-change: unset !important;
+
+
+    .v-btn:not(.v-btn--round).v-size--large {
+      height: 44px;
+      width: 100%;
+      @include up($lg) {
+       // height: 69px;
+        width: auto;
+      }
+    }
+
+    .v-btn:not(.v-btn--round):not(.v-size--large).v-btn--block {
+      height: 44px;
+
+      @include up($md) {
+        height: 48px;
+      }
+
+      span.v-btn__content {
+        span {
+          font-size: 16px;
+          line-height: 23px;
+          font-family: $font-family-secondary;
+        }
+      }
+    }
+
+    button.btn--primary.v-btn--contained:active, button.btn--primary.v-btn--contained:not(.v-btn--disabled) {
+      box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    button.btn--secondary.v-btn--disabled {
+      background: $gradient-dark-disabled !important;
+      color: $grey1 !important;
+      box-shadow: none !important;
+
+      svg {
+        path {
+          stroke: $grey1;
+        }
+      }
+    }
+
+    button.v-btn.v-btn--contained.theme--light.v-size--large.elevation-0 {
+      background-color: rgba(200, 207, 212, 0.25);
+    }
+
+    button.v-btn.theme--light.btn--secondary:hover {
+      opacity: 0.75;
+      //background-position: 0 -30px;
+      //background: $gradient-dark;
+
+      &:hover {
+        &::before {
+          opacity: 0;
+        }
+      }
+
+      @include up($sm) {
+        //opacity: 75%;
+        //background-position: 0 -50px;
+        //background: $gradient-dark-hover;
+      }
+    }
+
+    button.v-btn.v-btn--block.v-btn--contained.v-btn--disabled.theme--light.v-size--default,
+    .theme--light.v-btn.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined){
+      background: $gradient-light-disabled !important;
+      color: $font-color !important;
+    }
+  }
+}
+
+//INPUTS
+.v-input--switch {
+  &__thumb {
+    background: #fff !important;
+  }
+
+  .v-input--switch__track.primary--text {
+    color: $grey1 !important;
+    caret-color: $grey1 !important;
+    opacity: 1 !important;
+  }
+
+  .v-input--selection-controls__ripple.primary--text {
+    color: $grey1 !important;
+  }
+
+  div.v-card__title {
+    word-wrap: break-word !important;
+  }
+
+  div.v-dialog {
+    div.error-dialog {
+      max-width: 400px;
+      background: $white;
+      border-radius: $border-radius-primary;
+
+      div.v-card__title {
+        word-wrap: break-word;
+      }
+    }
+  }
+}
+
+.v-text-field {
+  input {
+    padding-bottom: 13px;
+  }
+}
+
+.card-light.v-card {
+  border-radius: $border-radius-primary !important;
+  background: $white4 !important;
+  width: 100% !important;
+
+  .v-sheet {
+    border-radius: $border-radius-primary !important;
+  }
+
+  .v-text-field {
+    input {
+      color: $grey2;
+      font-size: 18px;
+      line-height: 23px;
+      text-align: center !important;
+
+      &::placeholder {
+        color: inherit;
+        opacity: 1;
+        text-align: center;
+      }
+    }
+  }
+}
+#memostory {
+  div.v-input input{
+    letter-spacing: 0;
+  }
+  //Switch element
+  div.v-input--switch__thumb {
+    height: 16px;
+    width: 16px;
+    top: 0;
+  }
+  div.v-input--switch__thumb, div.v-input--selection-controls__ripple{
+    transform: translate(-2px, 0) !important;
+  }
+  div.v-input--switch__thumb.theme--light.primary--text {
+    transform: translate(13px, 0) !important;
+  }
+
+  div.v-input--switch__track {
+    height: 20px !important;
+    width: 35px !important;
+  }
+  div.v-input--selection-controls__ripple{
+    top: -15px;
+  }
+  div.v-input--selection-controls__ripple.primary--text{
+    transform: translate(13px, 0) !important;
+  }
+  div.v-input--selection-controls{
+    margin-top: 0;
+    padding-top: 0;
+    margin-right: -13px;
+    @include up($sm){
+      margin-right: 0;
+    }
+  }
+}

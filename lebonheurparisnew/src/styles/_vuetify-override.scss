@@ -1,0 +1,45 @@
+@import 'variables';
+/*
+	здесь мы переопределяем все стили vuetify которые нельзя заменить в теме
+ */
+@import '~vuetify/src/styles/styles.sass';
+
+#app {
+  /*.theme--light {
+    &.v-select {
+      .v-select {
+        &__selections {
+
+          color: $black;
+
+        }
+      }
+    }
+
+    &.v-text-field > .v-input__control >
+    .v-input__slot {
+      &:before {
+        border-width: 1px;//bottom: 1px solid $black !important;
+        border-color: $black;//1px;//bottom: 1px solid $black !important;
+      }
+
+      !*&:after {
+        border-bottom: 1px solid $black !important;
+      }*!
+
+      .v-label {
+        font-family: $body-font-family;
+        font-size: 14px;
+        line-height: 23px;
+        letter-spacing: 3px;
+        color: $black;
+        height: auto;
+
+        &.primary--text {
+          color: $black !important;
+        }
+      }
+    }
+
+  }*/
+}

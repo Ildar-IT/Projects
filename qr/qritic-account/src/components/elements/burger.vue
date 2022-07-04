@@ -1,0 +1,131 @@
+<template>
+	<svg id="e7agworhu8rt1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+	     viewBox="0 0 50 50" shape-rendering="geometricPrecision" text-rendering="geometricPrecision">
+
+		<circle id="e7agworhu8rt2" r="25" transform="matrix(1 0 0 1 25 25)" fill="rgb(255,255,255)" stroke="none"
+		        stroke-width="1"/>
+		<g id="e7agworhu8rt3_tr" transform="translate(33.999900,32.500000) rotate(0)">
+			<g id="e7agworhu8rt3_ts" transform="scale(0.997563,1)">
+				<rect id="e7agworhu8rt3" width="18.173461" height="3" rx="1.500000" ry="1.500000"
+				      transform="translate(-17.999900,-1.500000)" fill="rgb(0,0,0)" stroke="none" stroke-width="1"/>
+			</g>
+		</g>
+		<rect id="e7agworhu8rt4" width="18" height="3" rx="1.500000" ry="1.500000"
+		      transform="matrix(1 0 0 1 16.08590171499999 24)" fill="rgb(0,0,0)" stroke="none" stroke-width="1"/>
+		<rect id="e7agworhu8rt5" display="none" width="18" height="3" rx="1.500000" ry="1.500000"
+		      transform="matrix(1 0 0 1 15.99990000000000 17)" fill="rgb(0,0,0)" stroke="none" stroke-width="1"/>
+		<g id="e7agworhu8rt6_to" transform="translate(33.999900,18.500000)">
+			<g id="e7agworhu8rt6_tr" transform="rotate(0)">
+				<g id="e7agworhu8rt6_ts" transform="scale(1,1)">
+					<rect id="e7agworhu8rt6" width="18" height="3" rx="1.500000" ry="1.500000"
+					      transform="translate(-18,-1.500000)" fill="rgb(0,0,0)" stroke="none" stroke-width="1"/>
+				</g>
+			</g>
+		</g>
+	</svg>
+
+</template>
+
+<script>
+	export default {
+		name: "burger"
+	}
+</script>
+<style>
+#e7agworhu8rt3_tr {
+	animation: e7agworhu8rt3_tr__tr 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt3_tr__tr {
+	0% {
+		transform: translate(33.999900px, 32.500000px) rotate(0deg)
+	}
+	33.333333% {
+		transform: translate(33.999900px, 32.500000px) rotate(38.960453deg)
+	}
+	100% {
+		transform: translate(33.999900px, 32.500000px) rotate(38.960453deg)
+	}
+}
+
+#e7agworhu8rt3_ts {
+	animation: e7agworhu8rt3_ts__ts 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt3_ts__ts {
+	0% {
+		transform: scale(0.997563, 1)
+	}
+	33.333333% {
+		transform: scale(1.289419, 1)
+	}
+	100% {
+		transform: scale(1.289419, 1)
+	}
+}
+
+#e7agworhu8rt4 {
+	animation: e7agworhu8rt4_c_o 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt4_c_o {
+	0% {
+		opacity: 1
+	}
+	33.333333% {
+		opacity: 0
+	}
+	100% {
+		opacity: 0
+	}
+}
+
+#e7agworhu8rt6_to {
+	animation: e7agworhu8rt6_to__to 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt6_to__to {
+	0% {
+		transform: translate(33.999900px, 18.500000px)
+	}
+	33.333333% {
+		transform: translate(33.659529px, 17.290149px)
+	}
+	100% {
+		transform: translate(33.659529px, 17.290149px)
+	}
+}
+
+#e7agworhu8rt6_tr {
+	animation: e7agworhu8rt6_tr__tr 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt6_tr__tr {
+	0% {
+		transform: rotate(0deg)
+	}
+	33.333333% {
+		transform: rotate(-41.679678deg)
+	}
+	100% {
+		transform: rotate(-41.679678deg)
+	}
+}
+
+#e7agworhu8rt6_ts {
+	animation: e7agworhu8rt6_ts__ts 3000ms linear 1 normal forwards
+}
+
+@keyframes e7agworhu8rt6_ts__ts {
+	0% {
+		transform: scale(1, 1)
+	}
+	33.333333% {
+		transform: scale(1.288263, 1)
+	}
+	100% {
+		transform: scale(1.288263, 1)
+	}
+}
+
+</style>

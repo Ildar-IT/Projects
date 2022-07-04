@@ -1,0 +1,362 @@
+@import 'variables';
+/*
+	здесь мы переопределяем все стили vuetify которые нельзя заменить в теме
+ */
+@import '~vuetify/src/styles/styles.sass';
+
+body {
+  .v-application {
+    a {
+      color: $font-color;
+      text-decoration: none;
+      @include transition();
+
+      &:hover {
+        cursor: pointer;
+        color: $primary;
+      }
+    }
+  }
+
+  #account-app {
+    /*
+    * typography
+    */
+    .body-1 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px !important;
+      line-height: 23px;
+    }
+
+    .body-2 {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px !important;
+      line-height: 19px;
+    }
+
+    .body-3 {
+      font-family: $font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 17px;
+    }
+
+    /*
+    * buttons
+    */
+
+    .v-btn {
+      border-radius: 3px;
+      text-transform: inherit;
+      letter-spacing: initial;
+
+      // todo упростить, наверняка есть лишние стили
+
+      &.v-size--default {
+        &:not(.v-btn--round):not(.v-btn--disabled) {
+          box-shadow: 0 15px 15px rgba(103, 110, 134, 0.12);
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 19px;
+          font-family: $heading-font-family;
+
+          @include transition();
+
+          &:not(.v-btn--block) {
+            @include up($sm) {
+              min-width: 296px;
+              width: auto;
+            }
+          }
+        }
+      }
+
+      &.v-size--large {
+        &:not(.v-btn--round):not(.v-btn--disabled) {
+          width: 100%;
+          box-shadow: 0px 4px 10px rgba(0, 178, 187, 0.5);
+          @include transition();
+          font-family: $heading-font-family;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 17px;
+          line-height: 21px;
+
+          &:not(.v-btn--block) {
+            @include up($sm) {
+              min-width: 296px;
+              width: auto;
+            }
+          }
+
+          .v-btn__content {
+            font-family: $heading-font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 17px;
+            line-height: 21px;
+          }
+        }
+      }
+
+      &.v-size--small {
+        &:not(.v-btn--round):not(.v-btn--disabled) {
+          width: 100%;
+          box-shadow: none;
+          @include transition();
+
+          &:not(.v-btn--block) {
+            @include up($sm) {
+              //min-width: 296px;
+              width: auto;
+            }
+          }
+
+          .v-btn__content {
+            font-family: $heading-font-family;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 12px;
+            line-height: 15px;
+          }
+        }
+      }
+
+      &.v-btn--text {
+        box-shadow: none !important;
+        background: transparent !important;
+      }
+
+      /*.primary {
+        text-transform: inherit;
+        height: 50px;
+        font-family: $heading-font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        width: 100%;
+        background-color: $secondary !important;
+        color: white;
+        line-height: 21px;
+
+        @include transition();
+        cursor: pointer;
+
+        &:hover {
+          background: $secondary-hover !important;
+          box-shadow: 0px 4px 10px rgba(0, 178, 187, 0.5);
+        }
+
+        @include up($sm) {
+          width: auto;
+        }
+
+      }*/
+
+      /*button.v-btn.primary_disabled.theme--light.v-btn.v-btn--disabled:not(.v-btn--flat):not(.v-btn--text):not(.v-btn--outlined) {
+        background-color: $gray0 !important;
+        text-transform: inherit;
+        font-family: $heading-font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        width: 100%;
+        color: #FFFFFF !important;
+        line-height: 21px;
+        @include transition();
+
+        span.v-btn__content {
+          color: #FFFFFF !important;
+        }
+
+        &:before {
+          background-color: $gray0 !important;
+        }
+      }*/
+
+      &:disabled {
+        color: #fff !important;
+      }
+
+      // todo проверить использование
+      &:not(.v-btn--outlined).secondary {
+        color: $primary;
+
+        &:hover {
+          background: $secondary-hover !important;
+          color: #ffffff;
+        }
+      }
+
+      /*.secondary {
+        text-transform: inherit;
+        height: 32px;
+        font-family: $heading-font-family;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 17px;
+        width: 100%;
+        background-color: $secondary !important;
+        color: $primary !important;
+        line-height: 21px;
+        box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.14);
+        @include transition();
+        cursor: pointer;
+
+        &--small {
+          min-width: auto
+        }
+
+        &:hover {
+          background: $secondary-hover !important;
+          color: #ffffff;
+        }
+
+        @include up($sm) {
+          width: auto;
+        }
+      }*/
+
+      &.premium {
+        &_primary {
+          background-color: $premium !important;
+          box-shadow: $premium-shadow !important;
+          font-family: $heading-font-family;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 17px;
+          line-height: 20.72px;
+        }
+
+        &_text {
+          &::before {
+            background-color: $premium !important;
+          }
+        }
+      }
+
+      &.v-btn.standard-size {
+        height: 50px !important;
+      }
+
+      &:hover {
+        svg {
+          fill: #ffffff;
+        }
+      }
+    }
+
+    .v-card__actions {
+      .v-btn {
+        border-radius: 4px;
+      }
+    }
+
+    /*
+    * alerts
+    */
+
+    .v-alert {
+      .v-alert__dismissible.v-btn {
+        width: auto;
+      }
+    }
+
+    /*
+    * inputs
+    */
+    .v-input__slot {
+      //margin-bottom: 0;
+    }
+
+    .v-input .v-label {
+      font-size: 18px;
+      line-height: 23px;
+      font-style: normal;
+      font-weight: normal;
+      height: 23px;
+    }
+
+    .v-text-field {
+      padding-top: 0px;
+      margin-top: 0px;
+    }
+
+    .v-textarea.v-text-field--enclosed.v-text-field--outlined:not(.v-input--dense) textarea {
+      margin-top: 14px;
+      margin-bottom: 10px;
+    }
+
+    .v-input {
+      border-radius: 16px;
+    }
+
+    .v-text-field.v-text-field--enclosed .v-text-field__details {
+      margin-bottom: 0px;
+    }
+
+    .v-text-field__details {
+      height: 0;
+      min-height: 0;
+    }
+  }
+
+  /*
+  * expansion-panel
+  */
+
+  .v-application--is-ltr .v-expansion-panel-header__icon {
+    margin-left: auto;
+    position: absolute;
+  }
+
+  .v-expansion-panel::before {
+    box-shadow: 0px 16px 24px rgba(103, 110, 134, 0.1);
+  }
+
+  /*
+  * theme smth
+  */
+
+  .theme--light {
+    .v-label {
+      color: #9AA1B9;
+    }
+
+    .v-divider {
+      border-color: rgba(0, 0, 0, 0.05);
+    }
+
+    .v-expansion-panels {
+
+      //box-shadow: 0 16px 24px rgba(103, 110, 134, 0.1);
+      border-radius: 32px;
+      //padding: 32px;
+    }
+
+    //To fix input with mask (phone input in login)
+    div.v-text-field input {
+      line-height: 23px;
+    }
+
+    /*    div.v-text-field.v-text-field--prefix >
+        div.v-input__control > div.v-text-field__slot > input {
+          line-height: 23px;
+        }*/
+
+  }
+}
+
+//Modal window v-dialog
+.v-dialog:not(.v-dialog--fullscreen) {
+  border-radius: 32px;
+}
+
+
+
+
+

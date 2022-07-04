@@ -1,0 +1,27 @@
+// public vue js transitions:
+/*
+* animation
+*/
+
+// Быстрое плавное появление, быстрое плавное скрытие - хорошо для роутинга страниц
+.route-enter-active, .route-leave-active {
+  transition: opacity .5s
+}
+.route-enter, .route-leave-to {
+  opacity: 0;
+}
+
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}
+
+.bottom-top-enter-active, .bottom-top-leave-active {
+  transition: opacity 0.5s;
+}
+.bottom-top-enter, .bottom-top-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}

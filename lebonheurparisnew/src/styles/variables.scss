@@ -1,0 +1,178 @@
+/**
+  Этот файл автоматически подхватывается vuetify, а также инклудится во все компоненты.
+  Поэтому, кроме SCSS переменных сюда можно включить глобальные миксины.
+  Не включаем сюда непосредственно глобальные стили. Для них - index.scss.
+*/
+@import "mixins";
+//@import '~vuetify/src/styles/styles.sass';
+
+$body-font-family: BlissPro, sans-serif;
+$header-font-family: BebasNeue, sans-serif;
+
+// переопределяем сетку
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+        'xs': 0,
+        'sm': 688px, // default 600px
+        'md': 1016px, // default 960px
+        'lg': 1344px, // default 1280px - 16px,
+        'xl': 1344px, // default 1920px - 16px
+);
+
+// переопределяем цвета
+$white: #ffffff;
+$black: #19191A;
+$golden: #C09C5E;
+$golden-light: #ede1cf;
+$gray: rgba(25, 25, 26, 0.5);
+
+$default-header-color: $golden;
+$default-text-color: $gray;
+$header-white: rgba(255, 255, 255, .97);
+
+$material-light: (
+        //'fg-color': $default-text-color,
+        //'text-color': $default-text-color,
+        'text': (
+                'primary': $default-text-color, //rgba(map-get($shades, 'black'), 0.87),
+                /*'secondary': rgba(map-get($shades, 'black'), 0.6),
+                'disabled': rgba(map-get($shades, 'black'), 0.38),
+                'link': map-get($blue, 'darken-2'),
+                'link-hover': map-get($grey, 'darken-3')*/
+        ),
+);
+
+// удобные сокращения для наших компонентов
+// важно, чтобы эти размеры совпадали с вышеуказанными!
+$xs: 0px;
+$sm: 688px;
+$md: 1016px;
+$lg: 1344px;
+$xl: 2000px;
+
+$container-padding-x: 20px;
+
+$default-font-size: 15px;
+$default-line-height: 28px;
+$default-font-weight: normal;
+$fw-book: 300;
+
+$fs-h1: 60px;
+$lh-h1: 65px;
+$ls-h1: 7px;
+$fs-h2: 48px;
+$lh-h2: 53px;
+$ls-h2: 6px;
+$fs-h3: 34px;
+$lh-h3: 39px;
+$ls-h3: 4px;
+$fs-h4: 24px;
+$lh-h4: 29px;
+$ls-h4: 3px;
+$fs-h5: 18px;
+$lh-h5: 23px;
+$ls-h5: 2px;
+$fs-h6: 14px;
+$lh-h6: 19px;
+$ls-h6: 1.5px;
+
+$fs-1: 16px;
+$lh-1: 23px;
+$ls-1: 3px;
+$fs-2: 12px;
+$lh-2: 16px;
+$ls-2: 2px;
+
+/* TODO все, что ниже - пересмотреть! */
+
+
+$layout-width: 1016px;
+
+$layout-margin-xs: 32px;
+$layout-margin-sm: 32px;
+$layout-margin-md: 32px;
+$layout-margin-lg: 64px;
+$layout-margin-xl: 64px;
+
+$margin-main-xs: 64px;
+$margin-main-sm: 96px;
+$margin-main-md: 96px;
+$margin-main-lg: 96px;
+$margin-main-xl: 96px;
+
+
+$padding-main-xs: 16px;
+$padding-main-sm: 16px;
+$padding-main-md: 32px;
+$padding-main-lg: 32px;
+$padding-main-xl: 64px;
+
+$padding-small-xs: 8px;
+$padding-small-sm: 8px;
+$padding-small-md: 16px;
+$padding-small-lg: 16px;
+$padding-small-xl: 16px;
+// цвета проекта
+
+
+// белый
+
+$white-400: rgba(255, 255, 255, 0.83);
+$white-300: rgba(255, 255, 255, 0.66);
+$white-200: rgba(255, 255, 255, 0.5);
+$white-100: rgba(255, 255, 255, 0.33);
+$white-50: rgba(255, 255, 255, 0.16);
+
+// черный
+$black-400: rgba(25, 25, 26, 0.83);
+$black-300: rgba(25, 25, 26, 0.66);
+$black-200: rgba(25, 25, 26, 0.5);
+$black-100: rgba(25, 25, 26, 0.33);
+$black-50: rgba(25, 25, 26, 0.16);
+
+// primary
+$primary-900: #3A2F1C;
+$primary-800: #5B4A2D;
+$primary-700: #7D663D;
+$primary-600: #9E804D;
+$primary-500: #C09C5E;
+$primary-400: #CBAD7A;
+$primary-300: #D6BF96;
+$primary-200: #E1D0B3;
+$primary-100: #ECE1CE;
+$primary-50: #F7F3EB;
+
+// secondary
+$secondary-900: #47110B;
+$secondary-800: #6F1A11;
+$secondary-700: #982417;
+$secondary-600: #C12D1E;
+$secondary-500: #EA3724;
+$secondary-400: #EE5A4B;
+$secondary-300: #F17D70;
+$secondary-200: #F5A097;
+$secondary-100: #F9C3BD;
+$secondary-50: #FCE6E4;
+
+
+//additional
+$additional-900: #454443;
+$additional-800: #6D6B69;
+$additional-700: #969291;
+$additional-600: #BDB9B7;
+$additional-500: #E6E1DE;
+$additional-400: #EAE6E4;
+$additional-300: #EFEBEA;
+$additional-200: #F3F1EF;
+$additional-100: #F7F6F5;
+$additional-50: #FCFBFB;
+
+//reject
+$reject-900: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #FF3D19;
+$reject-500: #FF3D19;
+$reject-50: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #FF3D19;
+
+//approve
+$approve-900: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), #00E7A1;
+$approve-500: #00E7A1;
+$approve-50: linear-gradient(0deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)), #00E7A1;

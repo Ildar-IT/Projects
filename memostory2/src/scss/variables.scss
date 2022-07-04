@@ -1,0 +1,278 @@
+@import 'mixins';
+@import '~vuetify/src/styles/styles.sass';
+/**
+ * Fonts
+ */
+
+$font-family: 'Charter';
+$body-font-family: $font-family;
+$heading-font-family: Circe Rounded;
+$btn-font-family: Circe Rounded;
+$font-family-secondary: Roboto;
+//важно! с _variables не работает
+// vuetify breakpoints:
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+		'xs': 0,
+		'sm': 600px,
+		'md': 1024px,
+		'lg': 1440px,
+		'xl': 1920px,
+);
+
+
+
+@import '~vuetify/src/styles/settings/_variables';
+
+/**
+ * Layout
+ */
+//in _variables.scss, config.js and plugins/vuetify.js
+$xs: 320px;
+$sm: 600px;
+$md: 1024px;
+$lg: 1440px;
+$xl: 1920px;
+
+$layout-margin-xs: 16px;
+$layout-margin-sm: 32px;
+$layout-margin-md: 64px;
+$layout-margin-lg: 64px;
+$layout-margin-xl: 64px;
+
+$layout-gutter-xs: 16px;
+$layout-gutter-sm: 32px;
+$layout-gutter-md: 64px;
+$layout-gutter-lg: 64px;
+$layout-gutter-xl: 64px;
+
+$margin-main-xs: 32px;
+$margin-main-sm: 32px;
+$margin-main-md: 64px;
+$margin-main-lg: 64px;
+$margin-main-xl: 64px;
+
+$margin-small-xs: 16px;
+$margin-small-sm: 16px;
+$margin-small-md: 32px;
+$margin-small-lg: 32px;
+$margin-small-xl: 32px;
+
+$header-height:100px;
+$header-height-mobile:72px;
+$block-max-width: 1050px;
+
+$font-weight-bold: 700;
+$font-weight-medium: 400;
+$font-weight-light: 300;
+
+
+/**
+ * Colors
+ */
+
+$background: #F1EDE3;
+
+$black: #001535;
+
+$brown1: #404040;
+$brown2: #808080;
+$brown3: #BFBFBF;
+
+$grey1: #234052;
+$grey2: #5A707D;
+$grey3: #91A0A9;
+$grey4: #C8CFD4;
+
+$white:#FFFFFF;
+$white1:#F1EDE3;
+$white2:#F4F2EA;
+$white3:#F8F6F1;
+$white4:#FBFAF8;
+
+$beige1: #ba9568;
+$beige2: #cbb08e;
+$beige3: #DCCAB3;
+$beige4: #EEE5D9;
+$beige5: #d8c69e;
+$beige6: #E2D4B6;
+$beige7: #ECE3CF;
+$beige8: #F5F1E7;
+
+
+$gradient-dark:linear-gradient(252deg, $grey2 0%, $grey1 100.43%);
+$gradient-dark-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), linear-gradient(252deg, $grey2 0%, $grey1 100.43%);
+$gradient-dark-active: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(252deg, $grey2 0%, $grey1 100.43%);
+$gradient-dark-disabled: rgba(200, 207, 212, 0.25);
+
+$gradient-light: linear-gradient(252deg, $beige2 0%, $beige1 100.43%);
+$gradient-light-hover: linear-gradient(0deg, rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.25)), linear-gradient(252deg, $beige2 0%, $beige1 100.43%);
+$gradient-light-active: linear-gradient(0deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), linear-gradient(252deg, $beige2 0%, $beige1 100.43%);
+$gradient-light-disabled: linear-gradient(0deg, rgba(200, 207, 212, 0.25), rgba(200, 207, 212, 0.25));
+
+
+//$font-color: #262831;
+$font-color: #234052;
+$font-color-primary: #234052;
+$font-color-hover: #000000;
+$color-grey: #51535A;
+//$warning: #F2C94C;
+//$success: #00B844;
+//$danger: #f56c6c;
+//$error: #EB5757;
+//$blue: #009EE0;
+//$info: #009ee0;
+//$disabled: rgba(0, 0, 0, 0.38);
+
+//Border radius
+$border-radius-primary : 30px;
+
+
+/*
+ * Grid
+ */
+
+/**
+ * Assets path
+ */
+$assets: '~@/assets';
+
+
+
+$headings: (
+		"subtitle-1": (
+				"size": 16px,
+				"weight": 400,
+				"line-height": 21px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": false,
+		),
+		"subtitle-2": (
+				"size": 14px,
+				"weight": 400,
+				"line-height": 19px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": false,
+		),
+		"body-1": (
+				"size": 18px,
+				"weight": 400,
+				"line-height": 23px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": false,
+		),
+		"body-2": (
+				"size": 14px,
+				"weight": 400,
+				"line-height": 19px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": false,
+		),
+		"button": (
+				"size": 17px,
+				"weight": 700,
+				"line-height": 20px,
+				"letter-spacing": normal,
+				"font-family": $btn-font-family,
+				"text-transform": false,
+		),
+		"caption": (
+				"size": 12px,
+				"weight": 400,
+				"line-height": 16px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": false,
+		),
+		"overline": (
+				"size": 10px,
+				"weight": 500,
+				"line-height": 15px,
+				"letter-spacing": normal,
+				"font-family": $body-font-family,
+				"text-transform": uppercase,
+		),
+		"x-small": (
+				"size": 14px,
+				"weight": 400,
+				"line-height": 18px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"small": (
+				"size": 16px,
+				"weight": 400,
+				"line-height": 20px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"x-normal": (
+				"size": 18px,
+				"weight": 400,
+				"line-height": 24px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"normal": (
+				"size": 24px,
+				"weight": 400,
+				"line-height": 24px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"x-big": (
+				"size": 26px,
+				"weight": 400,
+				"line-height": 33px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"medium": (
+				"size": 28px,
+				"weight": 400,
+				"line-height": 32px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"big": (
+				"size": 36px,
+				"line-height": 40px,
+				"weight": 400,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"x-large": (
+				"size": 38px,
+				"weight": 400,
+				"line-height": 48px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+		"large": (
+				"size": 42px,
+				"weight": 400,
+				"line-height": 44px,
+				"letter-spacing": 0,
+				"font-family": $body-font-family,
+				"text-transform": normal,
+		),
+);
+
+/*$btn-sizes: (
+		"default": 40,
+		"medium": 50,
+		"large": 70,
+		"x-large": 60,
+);*/

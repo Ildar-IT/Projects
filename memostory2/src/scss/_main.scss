@@ -1,0 +1,834 @@
+@import 'variables';
+@import 'fonts';
+
+:root {
+  --vh: 1vh;
+}
+
+html {
+  //overflow-y: auto;
+  overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
+  cursor: default;
+  font-family: $font-family;
+  font-weight: normal;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  //touch-action: pan-x pan-y;
+}
+
+/*
+* стандартные отсупы справа и слева для лейаута
+*/
+#memostory {
+  .layout {
+    display: block;
+    flex: none;
+    margin-right: $layout-margin-xs;
+    margin-left: $layout-margin-xs;
+    @include up($sm) {
+      margin-right: $layout-margin-sm;
+      margin-left: $layout-margin-sm;
+    }
+    @include up($md) {
+      margin-right: $layout-margin-md;
+      margin-left: $layout-margin-md;
+    }
+    @include up($lg) {
+      margin-right: $layout-margin-lg;
+      margin-left: $layout-margin-lg;
+    }
+    @include up($xl) {
+      margin-right: $layout-margin-xl;
+      margin-left: $layout-margin-xl;
+    }
+  }
+}
+/*
+* отсуп сверху страницы, используется для первого элемента под шапкой
+*/
+.layout-top {
+  display: block;
+  margin-top: $header-height-mobile;
+  @include up($lg) {
+    margin-top: $header-height;
+  }
+}
+
+/*
+* стандартный отсуп сверху, используется для любого элемента
+*/
+.margin-top-main {
+  margin-top: $margin-main-xs;
+
+  @include up($sm) {
+    margin-top: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-top: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-top: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-top: $margin-main-xl;
+  }
+}
+
+/*
+* стандартный отсуп спизу, используется для любого элемента
+*/
+.margin-bottom-main {
+  margin-bottom: $margin-main-xs;
+
+  @include up($sm) {
+    margin-bottom: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-bottom: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-bottom: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-bottom: $margin-main-xl;
+  }
+}
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп справа, используется для любого элемента
+*/
+.margin-right-main {
+  margin-right: $margin-main-xs;
+
+  @include up($sm) {
+    margin-right: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-right: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-right: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-right: $margin-main-xl;
+  }
+}
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп сверху, используется для любого элемента
+*/
+.margin-left-main {
+  margin-left: $margin-main-xs;
+
+  @include up($sm) {
+    margin-left: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-left: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-left: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-left: $margin-main-xl;
+  }
+}
+
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп свеху, если не подходит margin
+*/
+.padding-top-main {
+  padding-top: $margin-main-xs;
+
+  @include up($sm) {
+    padding-top: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-top: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-top: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-top: $margin-main-xl;
+  }
+}
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп снизу, если не подходит margin
+*/
+.padding-bottom-main {
+  padding-bottom: $margin-main-xs;
+
+  @include up($sm) {
+    padding-bottom: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-bottom: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-bottom: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-bottom: $margin-main-xl;
+  }
+}
+
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп слева, если не подходит margin
+*/
+.padding-left-main {
+  padding-left: $margin-main-xs;
+  @include up($sm) {
+    padding-left: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-left: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-left: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-left: $margin-main-xl;
+  }
+}
+
+/*
+todo избавиться в пользу стандартного контейнера
+* стандартный отсуп справа, если не подходит margin
+*/
+.padding-right-main {
+  padding-right: $margin-main-xs;
+  @include up($sm) {
+    padding-right: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-right: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-right: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-right: $margin-main-xl;
+  }
+}
+
+
+/*
+* маленький отсуп сверху, используется для любого элемента
+*/
+.margin-top-small {
+  margin-top: $margin-small-xs;
+
+  @include up($sm) {
+    margin-top: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-top: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-top: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-top: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп спизу, используется для любого элемента
+*/
+.margin-bottom-small {
+  margin-bottom: $margin-small-xs;
+
+  @include up($sm) {
+    margin-bottom: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-bottom: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-bottom: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-bottom: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп справа, используется для любого элемента
+*/
+.margin-right-small {
+  margin-right: $margin-small-xs;
+
+  @include up($sm) {
+    margin-right: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-right: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-right: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-right: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп сверху, используется для любого элемента
+*/
+.margin-left-small {
+  margin-left: $margin-small-xs;
+
+  @include up($sm) {
+    margin-left: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-left: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-left: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-left: $margin-small-xl;
+  }
+}
+
+
+/*
+* маленький отсуп свеху, если не подходит margin
+*/
+.padding-top-small {
+  padding-top: $margin-small-xs;
+
+  @include up($sm) {
+    padding-top: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-top: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-top: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-top: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп снизу, если не подходит margin
+*/
+.padding-bottom-small {
+  padding-bottom: $margin-small-xs;
+
+  @include up($sm) {
+    padding-bottom: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-bottom: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-bottom: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-bottom: $margin-small-xl;
+  }
+}
+
+
+/*
+* маленький отсуп слева, если не подходит margin
+*/
+.padding-left-small {
+  padding-left: $margin-small-xs;
+  @include up($sm) {
+    padding-left: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-left: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-left: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-left: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп справа, если не подходит margin
+*/
+.padding-right-small {
+  padding-right: $margin-small-xs;
+  @include up($sm) {
+    padding-right: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-right: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-right: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-right: $margin-small-xl;
+  }
+}
+
+/*
+* когда ставишь отсупы между колонками, у 1 и последней образуется лишний отсут лейаута, возвбращаем на место
+*/
+.anti-margin-row-small {
+  margin-right: -$margin-small-xs;
+  margin-left: -$margin-small-xs;
+  @include up($sm) {
+    margin-right: -$margin-small-sm;
+    margin-left: -$margin-small-sm;
+  }
+  @include up($md) {
+    margin-right: -$margin-small-md;
+    margin-left: -$margin-small-md;
+  }
+  @include up($lg) {
+    margin-right: -$margin-small-lg;
+    margin-left: -$margin-small-lg;
+  }
+  @include up($xl) {
+    margin-right: -$margin-small-xl;
+    margin-left: -$margin-small-xl;
+  }
+}
+
+.anti-margin-row-16 {
+  margin-right: -16px;
+  margin-left: -16px;
+}
+
+.anti-margin-row-32 {
+  margin-right: -32px;
+  margin-left: -32px;
+}
+
+.padding-footer {
+
+  @include up($sm) {
+    padding-bottom: 90px;
+  }
+
+}
+
+/*
+* шаблон адаптива, можно удалить в конце проекта
+*/
+.dev-template {
+
+  @include up($sm) {
+
+  }
+  @include up($md) {
+
+  }
+  @include up($lg) {
+
+  }
+  @include up($xl) {
+
+  }
+}
+
+
+.p-b-90 {
+  padding-bottom: 90px;
+}
+
+.z-index-1 {
+  z-index: -1;
+}
+
+.z-index0 {
+  z-index: 0;
+}
+
+.position-absolute {
+  position: absolute;
+}
+
+/*body::-webkit-scrollbar-thumb {
+  background: $background;
+}
+
+body::-webkit-scrollbar {
+  width: 6px;
+}
+
+body::-webkit-scrollbar-track {
+  @include transition();
+  background: transparent;
+  &:hover {
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+.home::-webkit-scrollbar {
+  width: 0;
+}*/
+
+.block-max-width {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: $block-max-width;
+}
+
+.swiper-pagination {
+  padding-top: $margin-main-xs;
+  position: relative;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.custom-pagination {
+  .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px !important;
+    background-color: $beige6;
+    opacity: 1;
+
+    &-active {
+      background-color: $beige1;
+    }
+  }
+}
+
+div.swiper-pagination.custom-pagination-light {
+  padding: 0 34px;
+  span.swiper-pagination-bullet {
+    max-width: 77.5px;
+    width: 100%;
+    height: 3px;
+    margin: 0 8px !important;
+    background-color: $white;
+    opacity: .5;
+    border-radius: 1000px;
+
+    &-active {
+      opacity: 1;
+    }
+  }
+}
+
+button.btn-with-svg {
+  span.v-btn__content {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+div.swiper-button-disabled {
+  button {
+    cursor: unset !important;
+  }
+}
+#memostory {
+  button.btn_roboto {
+    span.v-btn__content {
+      font-family: $font-family-secondary !important;
+    }
+  }
+}
+
+//TODO
+.hover-link {
+  cursor: pointer;
+  @include transition();
+
+  svg {
+    path {
+      @include transition();
+    }
+  }
+
+  &_primary {
+    &:hover {
+      color: $beige2;
+
+      svg {
+        path {
+          @include transition();
+          stroke: $beige2;
+        }
+
+        circle {
+          @include transition();
+          fill: $beige2;
+          stroke: $beige2;
+        }
+      }
+
+    }
+
+    &_balance {
+      &:hover {
+        svg {
+          path:nth-child(2) {
+            @include transition();
+            stroke: none;
+            fill: $beige2 !important;
+          }
+        }
+      }
+    }
+  }
+
+  &_fill {
+    cursor: pointer;
+    @include transition();
+
+    &:hover {
+      @include transition();
+      color: $beige2;
+
+      svg {
+        path {
+          @include transition();
+          fill: $beige2;
+        }
+      }
+    }
+  }
+
+  &_dark {
+    cursor: pointer;
+    color: $grey1;
+    @include transition();
+
+    &:hover {
+      color: $grey3;
+
+      svg {
+        path {
+          @include transition();
+          fill: $grey2;
+        }
+      }
+    }
+  }
+
+  &_light {
+    cursor: pointer;
+    color: $beige5;
+    @include transition();
+
+    svg {
+      circle, path {
+        @include transition();
+      }
+    }
+
+    &:hover {
+      color: $beige8;
+
+      svg {
+        path {
+          stroke: $beige8;
+          @include transition();
+        }
+
+        circle {
+          stroke: $beige8;
+        }
+      }
+    }
+
+    &--fill {
+      &:hover {
+        color: $beige8;
+
+        svg {
+          path {
+            fill: $beige8;
+            @include transition();
+          }
+        }
+      }
+    }
+  }
+}
+
+/*TODO: clean styles*/
+
+
+button.btn-white {
+  background: #fff !important;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+button.btn--primary.v-btn--contained:active, button.btn--primary.v-btn--contained {
+  box-shadow: 0px 10px 15px -3px rgb(0 0 0 / 15%);
+}
+
+button.outlined {
+  border-radius: 1000px;
+  text-transform: inherit;
+  background: transparent !important;
+
+  &_primary {
+    border: 2px solid $beige5 !important;
+    color: $white !important;
+  }
+
+  &_secondary {
+    border: 2px solid $grey4 !important;
+    color: $grey1 !important;
+  }
+}
+
+.photo-filter {
+  filter: grayscale(100%);
+
+  &::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(-180deg, rgba(0, 0, 0, 0) 45%, rgba(0, 0, 0, 0.75) 100%, rgba(0, 0, 0, 1) 100%);
+  }
+}
+
+.service-logo {
+  border-radius: 100%;
+  background-color: $beige7;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    path {
+      fill: $beige1;
+    }
+  }
+}
+
+button.shadow:not(.v-btn--disabled) {
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.15);
+}
+
+.w100 {
+  width: 100% !important;
+}
+
+.mobile-table {
+  &__cell {
+    border-bottom: 1px solid $grey4;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+
+    &:last-child {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+}
+
+ol.ordered-list {
+
+  &_first-layer {
+    padding-left: 0;
+    li:before {
+      font-family: $heading-font-family;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 18px;
+      line-height: 23px;
+      display: inline;
+      letter-spacing: 0.15px;
+      @include up($lg) {
+        font-size: 24px;
+        line-height: 29px;
+      }
+    }
+  }
+
+  &_second-layer {
+    li:before {
+      font-family: $body-font-family;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 23px;
+      display: inline;
+    }
+  }
+}
+
+ol {
+  /* убираем стандартную нумерацию */
+  list-style: none;
+  /* Идентифицируем счетчик и даем ему имя li. Значение счетчика не указано - по умолчанию оно равно 0 */
+  counter-reset: li;
+}
+
+li:before {
+  /* Определяем элемент, который будет нумероваться — li.
+  Before указывает, что содержимое, вставляемое при помощи свойства content,
+  будет располагаться перед пунктами списка.
+  Здесь же устанавливается значение приращения счетчика (по умолчанию равно 1). */
+  counter-increment: li;
+  /* С помощью свойства content выводится номер пункта списка.
+  Первая точка в кавычках добавляет разделяющую точку между цифрами,
+   второая точка в кавычках с пробелом добавляется перед содержимым каждого пункта списка */
+  content: counters(li, ".") ". ";
+
+}
+
+/*Список с маркерами типа "тире".
+ Сначала отменяем заданный по умолчанию стиль маркера */
+ul {
+  margin: 0;
+  list-style-type: none;
+}
+
+ul.dashed {
+  list-style-type: none;
+}
+
+ul.dashed > li {
+  text-indent: -5px;
+  position: relative;
+  margin-bottom: 8px;
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+/* Задаем свой стиль маркера элемента списка с помощью псевдо элемента before */
+ul.dashed > li:before {
+  content: '\2014';
+  width: 18px;
+  position: absolute;
+  margin-left: -34px;
+  font-weight: normal;
+  line-height: 23px;
+  letter-spacing: normal;
+  font-family: $body-font-family;
+}
+

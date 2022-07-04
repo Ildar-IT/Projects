@@ -1,0 +1,166 @@
+@import 'variables';
+@import 'fonts';
+
+h1 {
+  font-size: 96px;
+  line-height: 101px;
+  letter-spacing: -1.5px;
+}
+
+h2 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+
+ /* @include up($md) {
+    font-size: 50px;
+    line-height: 55px;
+  }*/
+
+  @include up($lg) {
+    font-size: 3.75rem;
+    line-height: 4rem;
+    letter-spacing: -0.5px;
+  }
+}
+
+h3 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+h4 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+}
+
+h5, .h5 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.15px;
+  @include up($md) {
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+h6 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+
+.h1 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 101px;
+  letter-spacing: -1.5px;
+}
+
+.h2 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 65px;
+  letter-spacing: -0.5px;
+}
+
+.h3 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.h4 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 39px;
+}
+
+// Другие стили у заголовка, а эти ребята без адаптива у тебя. Может быть через запятую указывать как h5, .h5 ?
+
+.h6 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+a {
+  text-decoration: none;
+}
+
+input {
+  font-family: $font-family;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.5px;
+}
+button.v-btn.v-btn--contained.theme--light.v-size--large.elevation-0{
+  max-width: 123px;
+  span.v-btn__content{
+    color: $font-color-primary;
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
+
+.v-btn__content {
+  font-family: $font-family-secondary !important;
+  font-weight: bold;
+}
+
+.beige-text {
+  color: $beige1;
+}
+
+.yellow-text {
+  color: $beige5;
+}
+
+.grey-text {
+  color: $grey1;
+}
+.grey-text-light {
+  color:$grey2;
+}
+
+.grey-text-light2 {
+  color:$grey4;
+}
+
+.light-text {
+  color: $white1;
+}
+
+.green-text{
+  color: #72BE4E;
+}
+
+.red-text{
+  color: #BE4E4E;
+}

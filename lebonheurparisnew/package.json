@@ -1,0 +1,42 @@
+{
+  "name": "lebonheurparisnew",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run svg && vue-cli-service serve",
+    "build": "npm run svg && vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "svg": "vsvg -s ./src/svg -t ./src/svg/js"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-router": "^5.0.4",
+    "@vue/cli-plugin-vuex": "^5.0.4",
+    "core-js": "^3.22.7",
+    "headful": "^1.0.3",
+    "vue": "^2.6.11",
+    "vue-router": "^3.5.4",
+    "vue-svgicon": "^3.2.9",
+    "vuetify": "^2.6.6",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.5.17",
+    "@vue/cli-service": "^4.5.17",
+    "animate.css": "^4.1.1",
+    "axios": "^0.26.1",
+    "axios-progress-bar": "^1.2.0",
+    "mapbox-gl": "^2.8.2",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.2.1",
+    "swiper": "^8.2.2",
+    "vue-cli-plugin-vuetify": "^2.5.0",
+    "vue-mapbox": "^0.4.1",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

@@ -1,0 +1,99 @@
+@import 'variables';
+
+.anim {
+  &-fade {
+    &-in {
+      animation-name: animFadeIn;
+      animation-duration: .3s;
+      animation-fill-mode: forwards;
+    }
+
+    &-nw {
+      position: relative;
+      animation-name: animFadeNW;
+      animation-duration: .3s;
+      animation-fill-mode: forwards;
+    }
+
+    &-se {
+       position: relative;
+       animation-name: animFadeSE;
+       animation-duration: .3s;
+       animation-fill-mode: forwards;
+     }
+
+    /*@include up($sm) {
+      transition: all 1.2s;
+      animation: none;
+      left: -24px;
+      top: -24px;
+    }
+    @include up($lg) {
+      left: -10px;
+      top: -10px;
+    }  */
+  }
+  &-dur {
+    &-3 {
+      animation-duration: 0.3s;
+    }
+    &-5 {
+      animation-duration: 0.5s;
+    }
+    &-10 {
+      animation-duration: 1.0s;
+    }
+  }
+  &-delay {
+    &-3 {
+      animation-delay: 0.3s;
+    }
+    &-5 {
+      animation-delay: 0.5s;
+    }
+    &-10 {
+      animation-delay: 1.0s;
+    }
+  }
+
+}
+
+@keyframes animFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes animFadeNW {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: -10px;
+    top: -10px;
+/*
+    @include up($lg) {
+      left: -16px;
+      top: -16px;
+    }*/
+  }
+}
+
+@keyframes animFadeSE {
+  from {
+    left: 0;
+    top: 0;
+  }
+  to {
+    left: 10px;
+    top: 10px;
+/*    @include up($lg) {
+      left: 16px;
+      top: 16px;
+    }*/
+  }
+}

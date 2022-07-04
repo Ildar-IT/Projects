@@ -1,0 +1,33 @@
+{
+  "name": "zarina2",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "npm run svg & vue-cli-service serve",
+    "build": "npm run svg & vue-cli-service build",
+    "svg": "vsvg -s ./src/svg -t ./src/svg/js"
+  },
+  "dependencies": {
+    "aos": "^2.3.4",
+    "core-js": "^3.6.5",
+    "swiper": "^5.4.2",
+    "vue": "^2.6.11",
+    "vue-awesome-swiper": "^4.1.1",
+    "vue-router": "^3.2.0",
+    "vue-svgicon": "^3.2.9",
+    "vuetify": "^2.4.0",
+    "vuex": "^3.6.2"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-router": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "axios": "^0.21.1",
+    "node-sass": "^4.12.0",
+    "sass": "~1.32.0",
+    "sass-loader": "^10.0.0",
+    "vue-cli-plugin-vuetify": "~2.4.2",
+    "vue-template-compiler": "^2.6.11",
+    "vuetify-loader": "^1.7.0"
+  }
+}

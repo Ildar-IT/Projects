@@ -1,0 +1,116 @@
+@import 'variables';
+@import 'fonts';
+
+
+#review-app {
+  h2 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 37px;
+
+    text-align: center;
+
+    @include up($lg) {
+      font-size: 48px;
+      line-height: 52px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+
+  h3 {
+  }
+
+  h4, .h4 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: 700;
+    letter-spacing: 0px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 23px;
+    @include up($md) {
+      font-size: 32px;
+      line-height: 37px;
+    }
+  }
+
+  h5, .h5 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+
+    @include up($lg) {
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+
+  h5 {
+
+  }
+
+  h6, .h6 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 23px;
+  }
+
+  .h7 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+  }
+
+  .h8 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 17px;
+  }
+
+  //pure type
+  .h2 {
+    font-family: $heading-font-family;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 69px;
+    /* identical to box height, or 108% */
+
+    text-align: center;
+    letter-spacing: -0.5px;
+  }
+
+
+
+  /*
+  * стандартное выравнивание
+  */
+  .flex {
+    display: flex;
+  }
+
+  .flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .gray-text {
+    color: $gray;
+  }
+}

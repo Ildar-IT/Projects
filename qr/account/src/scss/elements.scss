@@ -1,0 +1,50 @@
+@import 'variables';
+
+.btn--social{
+  width: 132px;
+}
+
+button.btn-fixed-small{
+  position: fixed !important;
+  bottom: 32px !important;
+  right: 32px;
+  z-index: 2;
+}
+
+button.btn-fixed-big{
+  position: fixed !important;
+  bottom: 64px;
+  right: 64px;
+  z-index: 2;
+  width: auto;
+  min-width: 0;
+}
+
+input {
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  &:focus {
+    outline: none;
+  }
+}
+
+.box-shadow-primary{
+  //box-shadow: 0px 15px 15px rgba(177, 69, 243, 0.24) !important;
+  filter: drop-shadow(0px 15px 15px rgba(177, 69, 243, 0.24)) !important;
+}
+
+.answer-button{
+  padding: 18px 32px;
+  border-radius: 24px;
+  cursor: pointer;
+  &--good{
+    background-color: $color-good;
+  }
+  &--bad{
+    background-color: $color-bad;
+  }
+}

@@ -1,0 +1,141 @@
+@import 'mixins';
+
+// TODO: это нужно здесь??
+//@import '~vuetify/src/styles/styles.sass';
+
+/**
+ * Fonts
+ */
+$font-family: Roboto,sans-serif;
+$font-family-header: Montserrat,sans-serif;
+//важно! с _variables не работает
+// vuetify breakpoints:
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+		'xs': 0,
+		'sm': 600px,
+		'md': 1024px,
+		'lg': 1440px,
+		'xl': 1920px,
+);
+$body-font-family: $font-family-header;
+$heading-font-family: $font-family-header;
+
+$layout-width: 1016px;
+@import '~vuetify/src/styles/settings/_variables';
+
+/**
+ * Layout
+ */
+//in _variables.scss, config.js and plugins/vuetify.js
+$sm: 600px;
+$md: 1024px;
+$lg: 1440px;
+$xl: 1920px;
+$header-height:50px;
+$layout-margin-xs: 32px;
+$layout-margin-sm: 32px;
+$layout-margin-md: 64px;
+$layout-margin-lg: 64px;
+$layout-margin-xl: 64px;
+
+$layout-gutter-xs: 32px;
+$layout-gutter-sm: 32px;
+$layout-gutter-md: 64px;
+$layout-gutter-lg: 64px;
+$layout-gutter-xl: 64px;
+
+$margin-main-xs: 32px;
+$margin-main-sm: 32px;
+$margin-main-md: 64px;
+$margin-main-lg: 64px;
+$margin-main-xl: 64px;
+
+$margin-small-xs: 16px;
+$margin-small-sm: 16px;
+$margin-small-md: 32px;
+$margin-small-lg: 32px;
+$margin-small-xl: 32px;
+
+
+$font-weight-bold: 700;
+$font-weight-medium: 400;
+$font-weight-light: 300;
+
+
+/**
+ * Colors
+ */
+
+$gray:#B3B8CB;
+$light-gray: #F1F2FF;
+$header-color: #000000;
+$font-color: #272933;
+$font-color-hover: #000000;
+
+$color-good:#CFF7CC;
+$red1: #F35A45;
+$color-bad:#FFCCCC;
+
+$color-red:#F35A45;
+$color-green:#87F345;
+
+//$secondary: #B145F3;
+
+
+$black1: #000000;
+$black2: #4D5265;
+$gray0: #cdd0dc;
+$gray: #b3b8cb;
+$gray2: #8189A8;
+$gray3: #A6ACB0;
+
+$font-color: $black1;
+$font-color-hover: #000000;
+
+$green1: #87F345;
+$green2: #6CC237;
+$green3:#C2F345;
+$yellow1: #F3EA45;
+$yellow2:#FFE7CC;
+$yellow3:#FFEDB0;
+$yellow4: #FFF9E5;
+
+
+$orange1: #F39345;
+$red1: #F35A45;
+$primary: #00B2BB;
+$primary-hover: #00B2BB;
+$primary-light: #F3F4FC;
+
+$secondary: #e6f7f8;
+$secondary-hover: #80d9dd;
+$active: $primary;
+$disabled: #E2E2E2;
+/*$primary: #B145F3;
+$primary-hover: #C16AF5;
+$primary-light: #F3F4FC;
+
+$secondary: #EFDAFD;
+$secondary-hover: $primary;
+$active: #6A2992;
+$disabled: #CDD0DC;*/
+
+$premium: #F7CE22;
+$premium-shadow: 0px 15px 15px rgba(198, 160, 0, 0.24);
+
+$color-brown:#824500;
+$color-good:#CFF7CC;
+$color-bad:#FFCCCC;
+$color-neutral: #FFCF99;
+
+
+
+/*
+ * Grid
+ */
+
+/**
+ * Assets path
+ */
+$assets: '~@/assets';

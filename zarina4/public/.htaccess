@@ -1,0 +1,7 @@
+RewriteEngine on
+
+# дефолтная обработка
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI}      !^\.php$
+RewriteRule ^(.*)$ /index.html [NC,L,QSA]

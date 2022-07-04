@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('~@/assets/fonts/BebasNeueRegular.eot');
+  src: local('Bebas Neue Regular'), local('BebasNeue-Regular'),
+    //url('~@/assets/fonts/BebasNeueRegular.eot') format('embedded-opentype'),
+  url('~@/assets/fonts/BebasNeueRegular.woff2') format('woff2'),
+  url('~@/assets/fonts/BebasNeueRegular.woff') format('woff'),
+  url('~@/assets/fonts/BebasNeueRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BebasNeue';
+  src: url('~@/assets/fonts/BebasNeueBook.eot');
+  src: local('Bebas Neue Book'), local('BebasNeue-Book'),
+    //url('~@/assets/fonts/BebasNeueBook.eot') format('embedded-opentype'),
+  url('~@/assets/fonts/BebasNeueBook.woff2') format('woff2'),
+  url('~@/assets/fonts/BebasNeueBook.woff') format('woff'),
+  url('~@/assets/fonts/BebasNeueBook.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BlissPro';
+  src: url('~@/assets/fonts/BlissPro-Regular.eot');
+  src: local('BlissPro Regular'), local('BlissPro-Regular'),
+  url('~@/assets/fonts/BlissPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/BlissPro-Regular.woff2') format('woff2'),
+  url('~@/assets/fonts/BlissPro-Regular.woff') format('woff'),
+  url('~@/assets/fonts/BlissPro-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'BlissPro';
+  src: url('~@/assets/fonts/BlissPro-Light.eot');
+  src: local('BlissPro Light'), local('BlissPro-Light'),
+  url('~@/assets/fonts/BlissPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('~@/assets/fonts/BlissPro-Light.woff2') format('woff2'),
+  url('~@/assets/fonts/BlissPro-Light.woff') format('woff'),
+  url('~@/assets/fonts/BlissPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}

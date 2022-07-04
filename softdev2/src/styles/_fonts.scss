@@ -1,0 +1,36 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/Nunito-Bold.eot');
+  src: local('Nunito'), local('Nunito'),
+  url('../assets/fonts/Nunito-Bold.eot') format('embedded-opentype'),
+  url('../assets/fonts/Nunito-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Nunito-Bold.woff') format('woff'),
+  url('../assets/fonts/Nunito-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../assets/fonts/Nunito-Regular.eot');
+  src: local('Nunito'), local('Nunito'),
+  url('../assets/fonts/Nunito-Regular.eot') format('embedded-opentype'),
+  url('../assets/fonts/Nunito-Regular.woff2') format('woff2'),
+  url('../assets/fonts/Nunito-Regular.woff') format('woff'),
+  url('../assets/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('../assets/fonts/OpenSans-Regular.eot');
+  src: local('OpenSans'), local('OpenSans'),
+  url('../assets/fonts/OpenSans-Regular.eot') format('embedded-opentype'),
+  url('../assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+  url('../assets/fonts/OpenSans-Regular.woff') format('woff'),
+  url('../assets/fonts/OpenSans-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+

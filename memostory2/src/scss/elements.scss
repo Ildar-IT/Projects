@@ -1,0 +1,117 @@
+/*
+* buttons
+*/
+button {
+  &:focus {
+	outline: none;
+  }
+}
+
+.btn {
+  &--primary {
+	text-transform: inherit;
+	color: white;
+	background: $gradient-light;
+	background-size: 100%;
+	background-position: 0px 0px;
+	@include transition();
+	cursor: pointer;
+
+	&:hover {
+	  background-position: 0 -30px;
+	  // background: $gradient-light-hover;
+	}
+
+	&:focus {
+	  background: $gradient-light-active;
+	}
+
+	&:active {
+	  background: $gradient-light-active;
+	}
+
+	&:disabled {
+	  background: $gradient-light-disabled;
+	}
+  }
+
+
+  &--secondary {
+	text-transform: inherit;
+	color: white;
+	background: $gradient-dark;
+	background-size: 100%;
+	background-position: 0px 0px;
+	@include transition();
+	cursor: pointer;
+
+	&:hover {
+	  // background-position: 0 -30px;
+	  //background-position:100px;
+	  // background: $gradient-dark-hover;
+	}
+
+	&:focus {
+	  background: $gradient-dark-active;
+	}
+
+	&:active {
+	  background: $gradient-dark-active;
+	}
+
+	&:disabled {
+	  background: $gradient-dark-disabled;
+	}
+  }
+}
+
+.black {
+  background: black;
+}
+
+/*
+* icons
+*/
+.rotate {
+  transform: rotate(180deg);
+}
+
+
+/*
+* swiper
+*/
+.swiper-wrapper {
+  box-sizing: border-box;
+}
+
+/*
+* images
+*/
+
+.image-hoverable__wrap {
+  overflow: hidden;
+  cursor: pointer;
+
+}
+
+.image-hoverable {
+  @include transition-long();
+  cursor: pointer;
+
+  &:hover {
+	transform: scale(1.1);
+	overflow: hidden;
+  }
+}
+
+.v-dialog {
+  word-break: keep-all;
+
+  .v-card__title {
+	word-break: keep-all;
+  }
+
+  .round {
+	border-radius: 30px;
+  }
+}

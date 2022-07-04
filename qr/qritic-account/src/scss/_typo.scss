@@ -1,0 +1,221 @@
+@import 'variables';
+@import 'fonts';
+
+/*
+* адаптивный h1
+*/
+h1 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+  @include up($lg) {
+    font-size: 51px;
+    line-height: 55px;
+    letter-spacing: -0.5px;
+  }
+  /*@include up($lg) {
+	font-size: 64px;
+	line-height: 69px;
+	letter-spacing: -0.5px;
+  }*/
+}
+
+/*
+* адаптивный h2
+*/
+h2 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  @include up($lg) {
+    font-size: 41px;
+    line-height: 44px;
+    letter-spacing: -0.5px;
+  }
+  /*@include up($lg) {
+    font-size: 64px;
+    line-height: 69px;
+    letter-spacing: -0.5px;
+  }*/
+}
+
+h3 {
+  font-family: $heading-font-family;
+  color: #262831;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+
+  @include up($lg) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 53px;
+  }
+
+}
+
+h4{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+  @include up($lg) {
+    font-size: 32px;
+    line-height: 37px;
+  }
+
+
+
+}
+
+h5{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+
+  @include up($lg) {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+  }
+}
+
+h6 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+
+  @include up($lg){
+    font-size: 18px;
+    line-height: 23px;
+  }
+}
+
+
+
+.h3{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px;
+  line-height: 53px;
+}
+
+.h4{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+}
+
+.h5{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+.h6{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.h7 {
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.h8{
+  font-family: $heading-font-family;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 17px;
+}
+/*
+* стандартное выравнивание
+*/
+.flex {
+  display: flex;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &_column{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+}
+
+.wh-space-nowrap {
+  white-space: nowrap;
+}
+
+.primary-text{
+  color: $primary;
+}
+
+.gray-text {
+  color: $gray;
+}
+
+.dark-gray-text{
+  color: $gray2
+}
+
+.green-text {
+  color: $green2;
+}
+
+.light-green-text {
+  color: $green1
+}
+
+.red-text{
+  color:$red1;
+}
+
+.brown-text{
+  background: $yellow2;
+  color:$color-brown;
+}
+
+.neutral-text {
+  color: $color-neutral;
+}
+
+.position-relative{
+  position: relative;
+}

@@ -1,0 +1,543 @@
+@import 'variables';
+@import 'fonts';
+
+:root {
+  --vh: 1vh;
+}
+
+html {
+  overflow-y: inherit;
+  overflow-x: hidden;
+  height: 100%;
+  //min-height: -webkit-fill-available;
+  //min-height: calc(var(--vh, 1vh) * 100);
+  //height: 100vh;
+  //height: calc(var(--vh, 1vh) * 100);
+
+}
+
+body {
+  cursor: default;
+  font-family: $font-family;
+  font-weight: normal;
+  font-style: normal;
+  height: 100%;
+  //min-height: 100vh;
+  //min-height: -webkit-fill-available;
+  //min-height: calc(var(--vh, 1vh) * 100);
+  //min-height: 100vh;
+  min-height: calc(var(--vh, 1vh) * 100);
+}
+
+
+/*
+* стандартные отсупы справа и слева для лейаута
+*/
+.layout {
+  display: block;
+  flex: none;
+  margin-right: $layout-margin-xs;
+  margin-left: $layout-margin-xs;
+  @include up($sm) {
+    margin-right: $layout-margin-sm;
+    margin-left: $layout-margin-sm;
+  }
+  @include up($md) {
+    margin-right: $layout-margin-md;
+    margin-left: $layout-margin-md;
+  }
+  @include up($lg) {
+    margin-right: $layout-margin-lg;
+    margin-left: $layout-margin-lg;
+  }
+  @include up($xl) {
+    margin-right: $layout-margin-xl;
+    margin-left: $layout-margin-xl;
+  }
+}
+
+/*
+* отсуп сверху страницы, используется для первого элемента под шапкой
+*/
+.layout-top {
+  margin: auto;
+  display: block;
+  margin-top: $layout-margin-xs * 2 + $header-height;
+
+  @include up($sm) {
+    margin-top: $layout-margin-sm * 2 + $header-height;
+  }
+  @include up($md) {
+    margin-top: $layout-margin-md * 2 + $header-height;
+  }
+  @include up($lg) {
+    margin-top: $layout-margin-lg * 2.5 + $header-height;
+  }
+  @include up($xl) {
+    margin-top: $layout-margin-xl * 2.5 + $header-height;
+  }
+}
+
+/*
+* стандартный отсуп сверху, используется для любого элемента
+*/
+.margin-top-main {
+  margin-top: $margin-main-xs;
+
+  @include up($sm) {
+    margin-top: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-top: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-top: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-top: $margin-main-xl;
+  }
+}
+
+/*
+* стандартный отсуп спизу, используется для любого элемента
+*/
+.margin-bottom-main {
+  margin-bottom: $margin-main-xs;
+
+  @include up($sm) {
+    margin-bottom: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-bottom: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-bottom: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-bottom: $margin-main-xl;
+  }
+}
+
+/*
+* стандартный отсуп справа, используется для любого элемента
+*/
+.margin-right-main {
+  margin-right: $margin-main-xs;
+
+  @include up($sm) {
+    margin-right: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-right: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-right: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-right: $margin-main-xl;
+  }
+}
+
+/*
+* стандартный отсуп сверху, используется для любого элемента
+*/
+.margin-left-main {
+  margin-left: $margin-main-xs;
+
+  @include up($sm) {
+    margin-left: $margin-main-sm;
+  }
+  @include up($md) {
+    margin-left: $margin-main-md;
+  }
+  @include up($lg) {
+    margin-left: $margin-main-lg;
+  }
+  @include up($xl) {
+    margin-left: $margin-main-xl;
+  }
+}
+
+
+/*
+* стандартный отсуп свеху, если не подходит margin
+*/
+.padding-top-main {
+  padding-top: $margin-main-xs;
+
+  @include up($sm) {
+    padding-top: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-top: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-top: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-top: $margin-main-xl;
+  }
+}
+
+
+.padding-main {
+  padding-top: $margin-main-xs;
+  @include up($sm) {
+    padding-top: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-top: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-top: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-top: $margin-main-xl;
+  }
+  padding-bottom: $margin-main-xs;
+  @include up($sm) {
+    padding-bottom: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-bottom: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-bottom: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-bottom: $margin-main-xl;
+  }
+  padding-left: $margin-main-xs;
+  @include up($sm) {
+    padding-left: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-left: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-left: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-left: $margin-main-xl;
+  }
+  padding-right: $margin-main-xs;
+  @include up($sm) {
+    padding-right: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-right: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-right: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-right: $margin-main-xl;
+  }
+
+}
+
+/*
+* стандартный отсуп снизу, если не подходит margin
+*/
+.padding-bottom-main {
+  padding-bottom: $margin-main-xs;
+
+  @include up($sm) {
+    padding-bottom: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-bottom: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-bottom: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-bottom: $margin-main-xl;
+  }
+}
+
+
+/*
+* стандартный отсуп слева, если не подходит margin
+*/
+.padding-left-main {
+  padding-left: $margin-main-xs;
+  @include up($sm) {
+    padding-left: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-left: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-left: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-left: $margin-main-xl;
+  }
+}
+
+/*
+* стандартный отсуп справа, если не подходит margin
+*/
+.padding-right-main {
+  padding-right: $margin-main-xs;
+  @include up($sm) {
+    padding-right: $margin-main-sm;
+  }
+  @include up($md) {
+    padding-right: $margin-main-md;
+  }
+  @include up($lg) {
+    padding-right: $margin-main-lg;
+  }
+  @include up($xl) {
+    padding-right: $margin-main-xl;
+  }
+}
+
+
+/*
+* маленький отсуп сверху, используется для любого элемента
+*/
+.margin-top-small {
+  margin-top: $margin-small-xs;
+
+  @include up($sm) {
+    margin-top: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-top: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-top: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-top: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп спизу, используется для любого элемента
+*/
+.margin-bottom-small {
+  margin-bottom: $margin-small-xs;
+
+  @include up($sm) {
+    margin-bottom: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-bottom: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-bottom: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-bottom: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп справа, используется для любого элемента
+*/
+.margin-right-small {
+  margin-right: $margin-small-xs;
+
+  @include up($sm) {
+    margin-right: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-right: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-right: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-right: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп сверху, используется для любого элемента
+*/
+.margin-left-small {
+  margin-left: $margin-small-xs;
+
+  @include up($sm) {
+    margin-left: $margin-small-sm;
+  }
+  @include up($md) {
+    margin-left: $margin-small-md;
+  }
+  @include up($lg) {
+    margin-left: $margin-small-lg;
+  }
+  @include up($xl) {
+    margin-left: $margin-small-xl;
+  }
+}
+
+
+/*
+* маленький отсуп свеху, если не подходит margin
+*/
+.padding-top-small {
+  padding-top: $margin-small-xs;
+
+  @include up($sm) {
+    padding-top: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-top: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-top: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-top: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп снизу, если не подходит margin
+*/
+.padding-bottom-small {
+  padding-bottom: $margin-small-xs;
+
+  @include up($sm) {
+    padding-bottom: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-bottom: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-bottom: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-bottom: $margin-small-xl;
+  }
+}
+
+
+/*
+* маленький отсуп слева, если не подходит margin
+*/
+.padding-left-small {
+  padding-left: $margin-small-xs;
+  @include up($sm) {
+    padding-left: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-left: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-left: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-left: $margin-small-xl;
+  }
+}
+
+/*
+* маленький отсуп справа, если не подходит margin
+*/
+.padding-right-small {
+  padding-right: $margin-small-xs;
+  @include up($sm) {
+    padding-right: $margin-small-sm;
+  }
+  @include up($md) {
+    padding-right: $margin-small-md;
+  }
+  @include up($lg) {
+    padding-right: $margin-small-lg;
+  }
+  @include up($xl) {
+    padding-right: $margin-small-xl;
+  }
+}
+
+
+.padding-footer {
+
+  @include up($sm) {
+    padding-bottom: 90px;
+  }
+  //@include up($md) {
+  //
+  //}
+  //@include up($lg) {
+  //
+  //}
+  //@include up($xl) {
+  //
+  //}
+}
+
+
+/*
+* шаблон адаптива, можно удалить в конце проекта
+*/
+.dev-template {
+
+  @include up($sm) {
+
+  }
+  @include up($md) {
+
+  }
+  @include up($lg) {
+
+  }
+  @include up($xl) {
+
+  }
+}
+
+.svgicon {
+  width: 64px;
+}
+
+.v-btn {
+  @include transition();
+}
+
+// todo move to component
+.answer-button {
+  padding: 18px 32px;
+  border-radius: 24px;
+  cursor: pointer;
+  text-align: center;
+
+  &--good {
+    background-color: #CFF7CC;
+  }
+
+  &--bad {
+    background-color: $color-bad;
+  }
+
+  &--neutral {
+    background-color: #ffcf996e;
+  }
+}
+
+.button-text {
+  color: $secondary;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 21px;
+  height: 50px;
+  display: flex;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondary-text {
+  width: 100%;
+  margin-right: auto;
+  max-width: 550px;
+  margin-left: auto;
+}
+
+

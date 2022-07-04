@@ -1,0 +1,32 @@
+/**
+  Этот файл автоматически подхватывается vuetify, а также инклудится во все компоненты.
+*/
+
+$body-font-family:  sans-serif;
+
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+        'xs': 0,
+        'sm': 600px,  // default 600px
+        'md': 960px, // default 960px
+        'lg': 1280px - 16px, // default 1280px - 16px,
+        'xl': 1500px - 16px, // default 1920px - 16px
+);
+
+
+// важно, чтобы эти размеры совпадали с вышеуказанными!
+$xs: 0px;
+$sm: 600px;
+$md: 960px;
+$lg: 1280px - 16px;
+$xl: 1500px - 16px;
+
+
+$white-color: #FFFFFF;
+$black-color: #140E14;
+$taupe-color: #757575;
+$accent-color: #E9DED6;
+$grey-color: #E0E0E0;
+$zarina-grey-color: #ccc;
+$zarina-light-grey-color: #fafafa;
+$zarina-black-color: #000;

@@ -1,0 +1,102 @@
+/* MaterialDesignIcons.com */
+@font-face {
+  font-family: "Material Design Icons";
+  src: url("~@/assets/fonts/materialdesignicons-webfont.eot?v=5.9.55");
+  src: url("~@/assets/fonts/materialdesignicons-webfont.eot?#iefix&v=5.9.55") format("embedded-opentype"),
+  url("~@/assets/fonts/materialdesignicons-webfont.woff2?v=5.9.55") format("woff2"),
+  url("~@/assets/fonts/materialdesignicons-webfont.woff?v=5.9.55") format("woff"),
+  url("~@/assets/fonts/materialdesignicons-webfont.ttf?v=5.9.55") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mdi:before,
+.mdi-set {
+  display: inline-block;
+  font: normal normal normal 24px/1 "Material Design Icons";
+  font-size: inherit;
+  text-rendering: auto;
+  line-height: inherit;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mdi-checkbook::before {
+  content: "\F0A9D";
+}
+
+.mdi-checkbox-blank::before {
+  content: "\F012E";
+}
+
+.mdi-checkbox-blank-circle::before {
+  content: "\F012F";
+}
+
+.mdi-checkbox-blank-circle-outline::before {
+  content: "\F0130";
+}
+
+.mdi-checkbox-blank-off::before {
+  content: "\F12EC";
+}
+
+.mdi-checkbox-blank-off-outline::before {
+  content: "\F12ED";
+}
+
+.mdi-checkbox-blank-outline::before {
+  content: "\F0131";
+}
+
+.mdi-checkbox-intermediate::before {
+  content: "\F0856";
+}
+
+.mdi-checkbox-marked::before {
+  content: "\F0132";
+}
+
+.mdi-checkbox-marked-circle::before {
+  content: "\F0133";
+}
+
+.mdi-checkbox-marked-circle-outline::before {
+  content: "\F0134";
+}
+
+.mdi-checkbox-marked-outline::before {
+  content: "\F0135";
+}
+
+.mdi-checkbox-multiple-blank::before {
+  content: "\F0136";
+}
+
+.mdi-checkbox-multiple-blank-circle::before {
+  content: "\F063B";
+}
+
+.mdi-checkbox-multiple-blank-circle-outline::before {
+  content: "\F063C";
+}
+
+.mdi-checkbox-multiple-blank-outline::before {
+  content: "\F0137";
+}
+
+.mdi-checkbox-multiple-marked::before {
+  content: "\F0138";
+}
+
+.mdi-checkbox-multiple-marked-circle::before {
+  content: "\F063D";
+}
+
+.mdi-checkbox-multiple-marked-circle-outline::before {
+  content: "\F063E";
+}
+
+.mdi-checkbox-multiple-marked-outline::before {
+  content: "\F0139";
+}

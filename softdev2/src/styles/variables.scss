@@ -1,0 +1,48 @@
+/**
+  Этот файл автоматически подхватывается vuetify, а также инклудится во все компоненты.
+*/
+
+$primary-font-family: Nunito, sans-serif;
+$secondary-font-family: OpenSans, sans-serif;
+
+$grid-breakpoints: () !default;
+$grid-breakpoints: (
+        'xs': 0,
+        'sm': 768px,
+        'md': 1200px - 16px,
+        'lg': 1720px - 16px,
+);
+
+// важно, чтобы эти размеры совпадали с вышеуказанными!
+$xs: 0px;
+$sm: 768px;
+$md: 1200px - 16px;
+$lg: 1720px - 16px;
+
+// цвета проекта
+$header-color: linear-gradient(119.16deg, #367ADF 36.32%, #478BEF 91.17%);
+$main-primary2: #1F58AC;
+$blue-color: #E1EDFF;
+$blue-color2: #367ADF;
+
+
+$primary-1: #367ADF;
+$primary-2: #1F58AC;
+$secondary-1: #88B6FB;
+$secondary-2: #C2DBFF;
+$bg: #E1EDFF;
+
+$black: #031228;
+$dark-grey: #4A5566;
+$dark-grey2: #475770;
+$mid-grey: #A1B6DA;
+$light-grey: #EDF1F9;
+$white: #ffffff;
+$success: #95D817;
+$error: #F72E52;
+$warning: #FFB702;
+$header-bg:rgba(255, 255, 255, 0.1);
+$header-bg-moz: rgba(225, 237, 255, 0.8);
+$bg-gradient-white-blue: linear-gradient(154.66deg, #D7E6FF -1.2%, #89B8FF 96.94%);
+$bg-error-gradient: linear-gradient(154.66deg, #EDF4FF -1.2%, #78AEFF 96.94%);
+$h2-bg-gradient:linear-gradient(119.16deg, #367ADF 36.32%, #478BEF 91.17%);
